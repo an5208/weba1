@@ -1,0 +1,42 @@
+/* header - to be reused */
+header{
+    border: groove 2px black;
+    overflow: hidden;
+    background-color: rgb(90, 241, 90);
+    font-family: 'Trebuchet MS';
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    float:right;
+    border-right: solid 1px black;
+}
+nav li a{
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 5px 40px;
+    background-color: yellow;
+    text-decoration: none;
+    font-family: cursive;
+}
+nav li a:hover{
+    background-color: rgb(90, 241, 90);
+    border-top: solid 2px yellow;
+    border-bottom: solid 2px yellow;
+}
+#logo img{
+    float:left;
+    width: 175px;
+}
+#header_title{
+    padding-top: 10px;
+    text-align:center;
+    font-size: xx-large;
+    vertical-align: bottom;
+}
+#header_slogan{
+    text-align: center;
+    font-size: large;
+}
