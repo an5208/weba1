@@ -12,14 +12,16 @@ header{
     font-family: 'Trebuchet MS';
     text-align: center;
 }
-#hd_nav ul{
+.nav_bar ul{
     list-style-type: none;
-}
-#hd_nav li, #ft_nav li{
     float:right;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.nav_bar li{
     border-right: solid 1px black;
 }
-#hd_nav li a, #ft_nav li a{
+.nav_bar li a{
     display: block;
     color:black;
     text-align: center;
@@ -30,7 +32,7 @@ header{
     border-top: solid 2px black;
     border-bottom: solid 2px black;
 }
-#hd_nav li a:hover{
+.nav_bar li a:hover{
     background-color: #5d838a;
     color:white;
 }
@@ -72,15 +74,13 @@ header{
     display:flex;
     flex-direction: row;
 }
-#buy{
-
-}
 #book_img{
     display: flex;
     flex-direction: row;
 }
 .big_img{
     order:1;
+    max-width: 500px;
     padding: 0 30px 20px 40px;
     border-radius: 10px;
 }
@@ -99,7 +99,6 @@ header{
     font-family: 'Trebuchet MS';
     font-size: xx-large;
 }
-
 #buy_button{
     background-color: #D5ECD4;
     border: solid 2px #5d838a;
@@ -116,7 +115,6 @@ header{
     text-decoration: none;
     margin-top: 10%;
 }
-/* footer - to be reused */
 footer {
     border: groove 2px black;
     overflow: hidden;
@@ -130,7 +128,7 @@ footer {
 #ft_nav{
     font-family: cursive;
 }
-#ft_nav ul{
+.nav_bar ul{
     list-style-type: none;
 }
 #ft_cname{
@@ -144,4 +142,28 @@ footer {
 }
 #ft_nav a:hover{
     background-color: rgb(90, 241, 90);
+}
+/* responsive: vertical nav bar for mobile */
+@media screen and (min-width:960px){
+}
+
+@media screen and (max-width:960px){
+    .nav_bar ul{
+        flex-direction: column-reverse;
+    }
+    .nav_bar li{
+        float:none;
+    }
+    #book_img{
+        flex-direction: column;
+    }
+    #smalls{
+        flex-direction: row;
+    }
+    #purchase{
+        flex-direction: column;
+    }
+    #buy_button{
+        margin-top: 10%;
+    }
 }
