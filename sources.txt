@@ -1,4 +1,4 @@
-book images:
+Book images:
 image 1: https://images.app.goo.gl/hwiEadY1nbLQNu6n7
 image 2: https://images.app.goo.gl/81mREVDiNLCqEbcc8
 image 3: https://images.app.goo.gl/d4quaUaU8VxBBszj9
