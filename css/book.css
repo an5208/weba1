@@ -48,24 +48,73 @@ header{
 }
 /* body - unique */
 
-#cate{
-    display: flex;
-    order:1;
+#breadcrumb1 {
+    padding: 10px 16px;
+    list-style: none;
+  }
+  
+  /* Display list items side by side */
+  #breadcrumb1 li {
+    display: inline;
+    font-size: 18px;
+  }
+  #breadcrumb1 li a{
+    text-decoration: none;
+  }
+  
+  /* Add > before/behind each list item */
+  #breadcrumb1 li+li:before {
+    padding: 8px;
+    color: black;
+    content: "\003e";
+}
+#purchase{
+    display:flex;
     flex-direction: row;
-    justify-content: center;
 }
-.home_book{
-    width: 100px;
-    padding: 0 20px 0 20px;
-    border-left: dotted 2px gray;
-    border-right: dotted 2px gray;
+#buy{
+
 }
-.book_img{
-    height:150px;
-    max-width: 90px;
+#book_img{
+    display: flex;
+    flex-direction: row;
 }
-h1{
+.big_img{
+    order:1;
+    padding: 0 30px 20px 40px;
+    border-radius: 10px;
+}
+#smalls{
+    order: 2;
+    display:flex;
+    flex-direction: column;
+    padding: 0px 20px 0  0;
+}
+.lil_img{
+    max-height: 100px;
+    padding: 0 0 20px 0;
+}
+#price{
+    margin-left:25%;
+    font-family: 'Trebuchet MS';
+    font-size: xx-large;
+}
+
+#buy_button{
+    background-color: #D5ECD4;
+    border: solid 2px #5d838a;
+    width: 300px;
+    height: 25%;
+    margin-top: 40%;
+    margin-left: 25%;
+    font-family: 'Trebuchet MS';
+    font-size: xx-large;
     text-align: center;
+    top: 50%;
+}
+#buy_button a{
+    text-decoration: none;
+    margin-top: 10%;
 }
 /* footer - to be reused */
 footer {
@@ -96,4 +145,3 @@ footer {
 #ft_nav a:hover{
     background-color: rgb(90, 241, 90);
 }
-/* responsive */

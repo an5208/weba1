@@ -1,0 +1,76 @@
+<!-- this is the home page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/contact.css">
+    <title>Home: Book Vault</title>
+  </head>
+  <body>
+    <header>
+        <a id="logo" href="/index.html">
+            <img src="/media/logo.png" alt="Book Vault Logo">
+        </a>
+        <div id="header_title">Book Vault</div>
+        <div id="header_slogan">Reading is alright, give it another try.</div>
+      <nav id="hd_nav">
+        <ul>
+            <li><a href="/pages/contact.html">Contact Us</a></li>
+            <li><a href="/pages/cate1_crime.html">Category: Fiction</a></li>
+            <li><a href="/pages/cate1_crime.html">Category: Crime</a></li>
+            <li><a href="/index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="main">
+      <h1>
+        Contact Us
+      </h1>
+      <form id="contact" method="POST">
+        <label for="purpose" class="question">1) Reason of contact: </label>
+        <select name="purpose" id="purpose"> 
+          <option value="sell"> I want to sell books</option>
+          <option value="buy"> I want to buy books</option>
+        </select><br>
+
+        <label for="yname" class="question">2) Your name: </label>
+        <input type="text" id="yname" name="yname" maxlength="50" class="userin"><br>
+        <label for="yemail" class="question">3) Your email: </label>
+        <input type="email" id="yemail" name="yemail"><br>
+        <label for="phone" class="question">4) Your phone number: </label>
+        <input type="tel" id="phone" name="phone"><br>
+        <label>5) How do you want to be contacted? --  </label>
+            <label for="uemail"> Email </label>
+            <input type="radio" id="uemail" name="preferred" value="Email">
+            <label for="uphone"> Phone </label>
+            <input type="radio" id="uphone" name="preferred" value="Phone"><br>
+
+        <label for="newsletter" class="question">6) Do you want to subscribe to our newsletter? </label>
+            <input type="radio" id="radio_y" name="newsletter" value="Yes" checked="checked">
+            <label for="radio_y">Yes</label>
+            <input type="radio" id="radio_n" name="newsletter" value="No">
+            <label for="radio_n">No</label><br>
+            
+    <label for="msg" class="question">7) Notes: </label><br>
+    <textarea id="msg" name="msg" form="contact" >Additional notes...</textarea><br>
+    <input type="reset" value="reset">
+    <input type="submit" value="submit">
+    </section>
+    <!-- Footer - to be reused -->
+    <footer>
+      <div id="ft_cname">Book Vault</div>
+      <div id="ft_corp">Operate Under NVA's Big Bad Books, Inc.</div>
+      <nav id="ft_nav">
+        <ul>
+          <li><a href="/pages/contact.html">Contact Us</a></li>
+          <li><a href="#">Copyright</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">About Us</a></li>
+      </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

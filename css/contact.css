@@ -47,25 +47,18 @@ header{
     font-size: large;
 }
 /* body - unique */
-
-#cate{
-    display: flex;
-    order:1;
-    flex-direction: row;
-    justify-content: center;
+#contact{
+    margin-left: 20%;
 }
-.home_book{
-    width: 100px;
-    padding: 0 20px 0 20px;
-    border-left: dotted 2px gray;
-    border-right: dotted 2px gray;
-}
-.book_img{
-    height:150px;
-    max-width: 90px;
+.question{
+    display: inline;
+    line-height: 30px;
 }
 h1{
     text-align: center;
+}
+.userin{
+    display: inline;
 }
 /* footer - to be reused */
 footer {
@@ -96,4 +89,3 @@ footer {
 #ft_nav a:hover{
     background-color: rgb(90, 241, 90);
 }
-/* responsive */
